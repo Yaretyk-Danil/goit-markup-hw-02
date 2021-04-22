@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Студия</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 </head>
 <body class="body">
-    <header>
-      <nav>
+    <header class="header">
+        <div class="main-nav">
             <a href="/" lang="en" class="logo"><span class="logo-web">Web</span>Studio</a>
-            <ul class="site-nav">
-                <li><a href="./index.html" class="link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li><a href="" class="link current">Контакты</a></li>
-            </ul>      
-      </nav>
-      
-        <ul class="contacts-list">
-            <li><a href="" class="e-mail">info@devstudio.com</a></li>
-            <li><a href="" class="tel">+380961111111</a></li>
-        </ul>
+            <nav> 
+                <ul class="site-nav">
+                    <li class="site-nav-li"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="site-nav-li"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li class="site-nav-li"><a href="" class="link current">Контакты</a></li>
+                </ul>      
+            </nav>
+        
+            <ul class="contacts-list">
+                <li><a href="" class="e-mail">info@devstudio.com</a></li>
+                <li><a href="" class="tel">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-    <div>
-        <section class="hero">
+    <div class="hero">
+        <section class="hero-section">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <input type="button" class="button primery" value="Заказать услугу">
             
@@ -38,19 +41,19 @@
     
     <section class="section">
         <ul class="feature-list">
-            <li>
+            <li class="feature-li">
                 <h3 class="feature-list-title">Внимание к деталям</h3>
                 <p class="feature-list-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
+            <li class="feature-li">
                 <h3 class="feature-list-title">Пунктуальность</h3>
                 <p class="feature-list-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li>
+            <li class="feature-li">
                 <h3 class="feature-list-title">Планирование</h3>
                 <p class="feature-list-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li>
+            <li class="feature-li">
                 <h3 class="feature-list-title">Современные технологии</h3>
                 <p class="feature-list-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
@@ -60,31 +63,31 @@
     <section class="section">
         <h2 class="our-work-title">Чем мы занимаемся</h2>
         <ul class="our-work-list">
-            <li><img src="images/what_we_doing/11.jpg" alt="Печатает на клавиатуре" width="370"></li>
-            <li><img src="images/what_we_doing/22.jpg" alt="Держит телефон" width="370"></li>
-            <li><img src="images/what_we_doing/33.jpg" alt="Держит планшет" width="370"></li>
+            <li class="our-work-li"><img class="our-work-img" src="images/what_we_doing/11.jpg" alt="Печатает на клавиатуре" width="370"></li>
+            <li class="our-work-li"><img class="our-work-img" src="images/what_we_doing/22.jpg" alt="Держит телефон" width="370"></li>
+            <li class="our-work-li"><img class="our-work-img" src="images/what_we_doing/33.jpg" alt="Держит планшет" width="370"></li>
         </ul>
     </section>
     
     <section class="section">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
-            <li>
+            <li class="team-li">
                 <img src="images/our_team/11.jpg" alt="Фото Игорь Демьяненко" width="270">
                 <h4 class="team-members">Игорь Демьяненко</h4>
                 <p lang="en" class="team-text">Product Designer</p>
             </li>
-            <li>
+            <li class="team-li">
                 <img src="images/our_team/22.jpg" alt="Фото Ольга Репина" width="270">
                 <h4 class="team-members">Ольга Репина</h4>
                 <p lang="en" class="team-text">Frontend Developer</p>
             </li>
-            <li>
+            <li class="team-li">
                 <img src="images/our_team/33.jpg" alt="Фото Николай Тарасов" width="270">
                 <h4 class="team-members">Николай Тарасов</h4>
                 <p lang="en" class="team-text">Marketing</p>
             </li>
-            <li>
+            <li class="team-li">
                 <img src="images/our_team/44.jpg" alt="Фото Михаил Ермаков" width="270">
                 <h4 class="team-members">Михаил Ермаков</h4>
                 <p lang="en" class="team-text">UI Designer</p>
@@ -94,12 +97,14 @@
     </main>
 
     <footer class="footer">
-    <a href="/" lang="en" class="footer-logo"><span class="footer-logo-web">Web</span>Studio</a>
-    <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
-    <ul class="contacts-list-footer">
-        <li><a href="" class="e-mail-footer">info@devstudio.com</a></li>
-        <li><a href="" class="tel-footer">+380961111111</a></li>
-    </ul>
+    <div class="footer-section-logo">
+        <a href="/" lang="en" class="footer-logo"><span class="footer-logo-web">Web</span>Studio</a>
+        <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
+        <ul class="contacts-list-footer">
+            <li><a href="" class="e-mail-footer">info@devstudio.com</a></li>
+            <li><a href="" class="tel-footer">+380961111111</a></li>
+        </ul>
+    </div>
     </footer>
 </body>
 </html>
